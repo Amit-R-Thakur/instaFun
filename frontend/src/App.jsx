@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Signup from './component/SignUp/Signup'
 export default function App() {
     return (
-        <div>
-            hello from the app site
-        </div>
+        <>
+        <Signup></Signup>
+        </>
     )
 }

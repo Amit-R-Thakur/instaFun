@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainDiv {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 132, 255);
+  position: relative;
+}
+.signUpDiv {
+  position: absolute;
+  left: 33%;
+  right: 33%;
+  top: 5%;
+  bottom: 10%;
+  background-color: white;
+  border: 3px solid blueviolet;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 10% 1fr 6% 12% 5%;
+  overflow: hidden;
+  padding: 10px;
+}
+.header {
+  /* background-color: blueviolet; */
+  text-align: center;
+}
+.header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+.content {
+  padding: 15px;
+  /* background-color: brown; */
+  text-align: center;
+}
+.content input {
+  width: 85%;
+  padding: 8px;
+  font-weight: bold;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  margin-top: 6.8%;
+  font-size: 1rem;
+
+}
+.content input:focus {
+  outline: none;
+}
+.already {
+  /* background-color: burlywood; */
+  text-align: center;
+}
+.already h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+}
+.already h1 a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+.button {
+  /* background-color: cadetblue; */
+  text-align: center;
+}
+.button button {
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+  width: 30%;
+  height: 70%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.errdiv {
+  /* background-color: chartreuse; */
+  color: red;
+  text-align: center;
+}
