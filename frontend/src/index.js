@@ -1,3 +1,7 @@
 import reactDom from "react-dom";
 import App from "./App.jsx"
-reactDom.render(<App></App>,document.getElementById("root"))
+import {BrowserRouter} from "react-router-dom"
+reactDom.render(
+    <BrowserRouter><App></App>
+</BrowserRouter>
+,document.getElementById("root"))

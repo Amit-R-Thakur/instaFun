@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./signup.css";
+import Header from "../header/Header.jsx"
 export default function Signup() {
   const [users, userData] = useState({
     fullname: "",
@@ -44,6 +45,8 @@ export default function Signup() {
     }
   };
   return (
+    <>
+  <Header/>
     <div className="mainDiv">
       <div className="signUpDiv">
         <div className="header">
@@ -110,5 +113,6 @@ export default function Signup() {
         </div>
       </div>
     </div>
+    </>
   );
 }

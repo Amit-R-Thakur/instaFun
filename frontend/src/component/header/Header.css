@@ -1,0 +1,62 @@
+.HeaderMain {
+  background-color: rgba(0, 255, 255, 0.103);
+  height: 60px;
+  display: grid;
+  grid-template-columns: 20% 1fr 17%;
+}
+.Headerlogo {
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.Headerlogo h1 {
+  font-size: 1.5rem;
+  margin-left: 1%;
+  text-shadow: 1px 2px 2px rgba(255, 0, 0, 0.575);
+}
+.HeaderInstaIcon {
+  color: white;
+  background-color: rgba(220, 20, 143, 0.842);
+  border-radius: 10px;
+}
+.Headerlogo .HeaderInstaIcon {
+  font-size: 2.5rem;
+  margin-left: 10%;
+}
+/* .HeaderComponent {
+  background-color: brown;
+} */
+.HeaderComponent ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+a {
+  text-decoration: none;
+}
+.HeaderComponent ul li {
+  margin-left: 15%;
+  list-style-type: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.HeaderSocialMedia {
+  /* background-color: burlywood; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.HeaderGitHubIcon,
+.AiOutlineInstagram {
+  font-size: 2rem;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.active_class {
+  color: rgba(220, 20, 60, 0.747);
+  border-bottom: 3px solid red;
+}

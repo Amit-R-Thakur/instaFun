@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .mainDiv {
-  height: 100vh;
+  height: calc(100vh - 60px);
   width: 100%;
   background-color: rgb(0, 132, 255);
   position: relative;
