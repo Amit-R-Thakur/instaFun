@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .mainDiv {
   height: calc(100vh - 60px);
   width: 100%;

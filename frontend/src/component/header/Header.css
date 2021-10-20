@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .HeaderMain {
   background-color: rgba(0, 255, 255, 0.103);
   height: 60px;
