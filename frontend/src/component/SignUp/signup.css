@@ -48,7 +48,6 @@
   background: none;
   margin-top: 6.8%;
   font-size: 1rem;
-
 }
 .content input:focus {
   outline: none;
@@ -85,4 +84,8 @@
   /* background-color: chartreuse; */
   color: red;
   text-align: center;
+}
+.errdiv span {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
