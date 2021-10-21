@@ -9,7 +9,7 @@
   left: 25%;
   right: 25%;
   top: 3%;
-  bottom: 5%;
+  bottom: auto;
   background-color: white;
   border-radius: 10px;
   display: grid;
@@ -23,7 +23,8 @@
   margin-top: 2%;
 }
 .DatabaseContent {
-  background-color: rgba(255, 127, 80, 0.562);
+  /* background-color: rgba(255, 127, 80, 0.562); */
+  padding: 3%;
 }
 .DatabaseContent table {
   text-align: center;

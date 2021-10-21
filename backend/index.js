@@ -19,6 +19,30 @@ app.get("/datafromdatabase",async(req,res)=>{
     // console.log(req)
     const data=await simpleSignUp.find({})
     res.send(data)
+})
+
+app.post("/userLogin",async(req,res)=>{
+    const {email,password}=req.body;
+   const data= await simpleSignUp.findOne({"emai":email})
+   if(data)
+   {
+    //    console.log(password,data.password)
+       if(data.password==password)
+       {
+           res.send({login:true})
+
+       }
+       else
+       {
+           res.send({login:false,msg:"password not matched"})
+       }
+      
+   }
+   else
+   {
+       res.send({login:false,msg:"email not matched"})
+   }
 
 })
+
 app.listen(port,()=>{console.log(`server is running on port ${port}`)})

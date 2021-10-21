@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./signup.css";
-import Header from "../header/Header.jsx"
+import Header from "../header/Header.jsx";
 export default function Signup() {
   const [users, userData] = useState({
     fullname: "",
@@ -46,73 +46,73 @@ export default function Signup() {
   };
   return (
     <>
-  <Header/>
-    <div className="mainDiv">
-      <div className="signUpDiv">
-        <div className="header">
-          <h1>Sign Up</h1>
-        </div>
-        <div className="content">
-          {/* <label>Full Name:</label> */}
-          <input
-            type="text"
-            onChange={setvalue}
-            value={users.fullname}
-            name="fullname"
-            placeholder="Full Name"
-            autoComplete="false"
-          />
-          <input
-            type="email"
-            onChange={setvalue}
-            value={users.email}
-            name="email"
-            placeholder="Email"
-          />
-          <input
-            type="mobile"
-            onChange={setvalue}
-            value={users.mobile}
-            name="mobile"
-            placeholder="Mobile"
-          />
-          <input
-            type="password"
-            onChange={setvalue}
-            value={users.password}
-            name="password"
-            placeholder="Password"
-          />
-          <input
-            type="password"
-            onChange={setvalue}
-            value={users.cpassword}
-            name="cpassword"
-            placeholder="Confirm Password"
-          />
-        </div>
-        <div className="already">
-          <h1>
-            Already a Member?{" "}
-            <span>
-              <a href="/login">
-                <b>Log In</b>
-              </a>
-            </span>
-          </h1>
-        </div>
-        <div className="button">
-          <button type="submit" onClick={sendData}>
-            Sign Up
-          </button>
-        </div>
+      <Header />
+      <div className="mainDiv">
+        <div className="signUpDiv">
+          <div className="header">
+            <h1>Sign Up</h1>
+          </div>
+          <div className="content">
+            {/* <label>Full Name:</label> */}
+            <input
+              type="text"
+              onChange={setvalue}
+              value={users.fullname}
+              name="fullname"
+              placeholder="Full Name"
+              autoComplete="false"
+            />
+            <input
+              type="email"
+              onChange={setvalue}
+              value={users.email}
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              type="mobile"
+              onChange={setvalue}
+              value={users.mobile}
+              name="mobile"
+              placeholder="Mobile"
+            />
+            <input
+              type="password"
+              onChange={setvalue}
+              value={users.password}
+              name="password"
+              placeholder="Password"
+            />
+            <input
+              type="password"
+              onChange={setvalue}
+              value={users.cpassword}
+              name="cpassword"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div className="already">
+            <h1>
+              Already a Member?{" "}
+              <span>
+                <a href="/login">
+                  <b>Log In</b>
+                </a>
+              </span>
+            </h1>
+          </div>
+          <div className="button">
+            <button type="submit" onClick={sendData}>
+              Sign Up
+            </button>
+          </div>
 
-        <div className="errdiv">
-          {" "}
-          <span className="err">{users.err}</span>{" "}
+          <div className="errdiv">
+            {" "}
+            <span className="err">{users.err}</span>{" "}
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 }
