@@ -1,0 +1,39 @@
+.DatabaseMainDiv {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: rgb(0, 132, 255);
+  position: relative;
+}
+.MainData {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 3%;
+  bottom: 5%;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+
+  overflow: hidden;
+}
+.DatabaseHeader {
+  /* background-color: violet; */
+  text-align: center;
+  margin-top: 2%;
+}
+.DatabaseContent {
+  background-color: rgba(255, 127, 80, 0.562);
+}
+.DatabaseContent table {
+  text-align: center;
+  width: 100%;
+  border: 1.7px solid black;
+  font-size: 1.5rem;
+}
+.DatabaseContent table th {
+  border: 1.5px solid black;
+}
+.DatabaseContent table td {
+  border: 1.2px solid black;
+}

@@ -14,4 +14,11 @@ app.post("/signup",async(req,res)=>{
     .then((ress)=>{res.send({msg:"signup successfull"})})
     .catch((err)=>{res.send("some technical error")})
 })
+
+app.get("/datafromdatabase",async(req,res)=>{
+    // console.log(req)
+    const data=await simpleSignUp.find({})
+    res.send(data)
+
+})
 app.listen(port,()=>{console.log(`server is running on port ${port}`)})

@@ -95,7 +95,7 @@ export default function Signup() {
           <h1>
             Already a Member?{" "}
             <span>
-              <a href="/">
+              <a href="/login">
                 <b>Log In</b>
               </a>
             </span>

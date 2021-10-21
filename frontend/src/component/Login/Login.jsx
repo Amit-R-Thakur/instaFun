@@ -27,7 +27,7 @@ export default function Login() {
                     <button className="loginbtn">Login</button>
                     </div>
                     <div className="forgetandSignUp">
-                        <a href="/">don't have an account?</a>
+                        <a href="/signup">don't have an account?</a>
                         <a href="/">forget password?</a>
 
                     </div>

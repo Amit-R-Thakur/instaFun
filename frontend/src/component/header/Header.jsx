@@ -10,6 +10,7 @@ export default function Header() {
                 <ul>
                     <li><NavLink activeClassName="active_class" to="/signup">SignUp</NavLink></li>
                     <li><NavLink activeClassName="active_class" to="/login">Login</NavLink></li>
+                    <li><NavLink activeClassName="active_class" to="/database">Database</NavLink></li>
                 </ul>
 
             </div>
